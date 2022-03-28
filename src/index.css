@@ -1,0 +1,13 @@
+:root {
+  --font-family: "Rubik", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  background-color: rgba(234, 237, 237);
+}

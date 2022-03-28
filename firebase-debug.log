@@ -1,0 +1,36 @@
+[debug] [2022-03-28T10:11:47.696Z] ----------------------------------------------------------------------
+[debug] [2022-03-28T10:11:47.715Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-03-28T10:11:47.716Z] CLI Version:   10.2.1
+[debug] [2022-03-28T10:11:47.717Z] Platform:      win32
+[debug] [2022-03-28T10:11:47.717Z] Node Version:  v14.17.1
+[debug] [2022-03-28T10:11:47.758Z] Time:          Mon Mar 28 2022 11:11:47 GMT+0100 (West Africa Standard Time)
+[debug] [2022-03-28T10:11:47.758Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-28T10:11:47.910Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-28T10:11:47.910Z] > authorizing via signed-in user (olagunjuolaniyi512@gmail.com)
+[debug] [2022-03-28T10:11:47.910Z] [iam] checking project olaniyi--clone-fe3ce for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-03-28T10:11:47.944Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/olaniyi--clone-fe3ce:testIamPermissions [none]
+[debug] [2022-03-28T10:11:47.944Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/olaniyi--clone-fe3ce:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-28T10:11:48.541Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/olaniyi--clone-fe3ce:testIamPermissions 200
+[debug] [2022-03-28T10:11:48.542Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/olaniyi--clone-fe3ce:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-28T10:11:48.544Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/olaniyi--clone-fe3ce/serviceAccounts/olaniyi--clone-fe3ce@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-03-28T10:11:48.545Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/olaniyi--clone-fe3ce/serviceAccounts/olaniyi--clone-fe3ce@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-03-28T10:11:49.849Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/olaniyi--clone-fe3ce/serviceAccounts/olaniyi--clone-fe3ce@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-03-28T10:11:49.849Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/olaniyi--clone-fe3ce/serviceAccounts/olaniyi--clone-fe3ce@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-03-28T10:11:49.853Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/olaniyi--clone-fe3ce [none]
+[debug] [2022-03-28T10:11:50.416Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/olaniyi--clone-fe3ce 200
+[debug] [2022-03-28T10:11:50.417Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/olaniyi--clone-fe3ce {"projectId":"olaniyi--clone-fe3ce","projectNumber":"624434112843","displayName":"olaniyi-amazon-clone","name":"projects/olaniyi--clone-fe3ce","resources":{"hostingSite":"olaniyi--clone-fe3ce","storageBucket":"olaniyi--clone-fe3ce.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'olaniyi--clone-fe3ce'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2022-03-28T10:11:50.816Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:124:11)
+    at Object.join (path.js:424:7)
+    at Config.path (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:115:45)
+    at getChildEnvironment (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:50:49)
+    at runTargetCommands (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:71:14)
+    at C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:122:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[error] 
+[error] Error: An unexpected error has occurred.
